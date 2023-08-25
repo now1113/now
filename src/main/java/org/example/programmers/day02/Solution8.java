@@ -9,27 +9,19 @@ public class Solution8 {
 
     public long solution(long n) {
 
-        String answer2 = "";
         String s = String.valueOf(n);
+        char[] chars = s.toCharArray();
 
-        Integer[] longArr = new Integer[s.length()];
+        Arrays.sort(chars);
+        StringBuilder reversed = new StringBuilder(new String(chars)).reverse();
 
-        for (int i = 0; i < s.length(); i++) {
-            longArr[i] = Character.getNumericValue(s.charAt(i));
-        }
-        Arrays.sort(longArr, Collections.reverseOrder());
-
-        for (int i = 0; i < longArr.length; i++) {
-            answer2 += longArr[i];
-        }
-
-        return Long.parseLong(answer2);
-
+        return Long.parseLong(reversed.toString());
     }
     public static void main(String[] args) {
 
         Solution8 sol = new Solution8();
-        sol.solution(118372);
+        long solution = sol.solution(118372);
+        System.out.println("solution = " + solution);
     }
 
 }
