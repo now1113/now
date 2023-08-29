@@ -1,0 +1,14 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(‘Üã«8é­°‘£1
+Y
+java:S1854%"7Remove this useless assignment to local variable "arr".(³Øë¨ûÿÿÿÿ8’û³‘£1
+T
+java:S1854$"7Remove this useless assignment to local variable "sol".(Ò×ŸÎ8’û³‘£1
+E
+java:S1481$"(Remove this unused "sol" local variable.(Ò×ŸÎ8“û³‘£1
+J
+java:S1481%"(Remove this unused "arr" local variable.(³Øë¨ûÿÿÿÿ8“û³‘£1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8“û³‘£1
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8“û³‘£1

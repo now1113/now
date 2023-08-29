@@ -1,0 +1,8 @@
+
+^
+java:S1854-"<Remove this useless assignment to local variable "solution".(â‚Ï¡ıÿÿÿÿ8à·¸ã£1
+O
+java:S1481-"-Remove this unused "solution" local variable.(â‚Ï¡ıÿÿÿÿ8á·¸ã£1
+X	java:S125."<This block of commented-out lines of code should be removed.(í‚Ğ§8á·¸ã£1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Üğ¡ã£1
