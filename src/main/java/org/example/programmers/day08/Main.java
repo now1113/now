@@ -1,6 +1,5 @@
 package org.example.programmers.day08;
 
-import java.util.stream.IntStream;
 
 public class Main {
 
@@ -12,26 +11,20 @@ public class Main {
 //    첫 번째 글자는 0번째 인덱스로 보아 짝수번째 알파벳으로 처리해야 합니다.
 
     public String solution(String s) {
-        StringBuilder sb = new StringBuilder();
-        String[] strArr = s.split(" ");
+        String answer = "";
+        String[] strArr = s.split("");
+        int idx = 0;
 
         for (int i = 0; i < strArr.length; i++) {
-            String str = strArr[i];
-
-            for (int j = 0; j < str.length(); j++) {
-                char c = str.charAt(j);
-                if (j % 2 == 0) {
-                    sb.append(Character.toUpperCase(c));
-                } else {
-                    sb.append(Character.toLowerCase(c));
-                }
+            if (strArr[i].equals(" ")) {
+                idx = 1;
             }
-            if(i < strArr.length - 1)
-                sb.append(" ");
 
+            answer += idx % 2 == 0 ? strArr[i].toUpperCase() : strArr[i].toLowerCase();
+            idx++;
         }
-        System.out.println("sb.toString() = " + sb.toString());
-        return sb.toString();
+
+        return answer;
     }
 
     public static void main(String[] args) {
