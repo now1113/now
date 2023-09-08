@@ -5,25 +5,17 @@ import java.util.Arrays;
 public class Main {
 
     public int solution(int[] d, int budget) {
-        int cnt = 0;
-        int sum = 0;
-        int chk = budget;
+        int answer = 0;
 
         Arrays.sort(d);
+        for (int i = 0; i < d.length; i++) {
+            if(budget < d[i]) break;
 
-        while (budget > 0) {
-            for (int i : d) {
-
-                sum += i;
-                if(sum <= chk) {
-                    cnt++;
-                }
-                budget -= i;
-                if(chk == sum) break;
-            }
+            budget -= d[i];
+            answer++;
         }
-        System.out.println("chk = " + chk);
-        return cnt;
+
+        return answer;
     }
 
     public static void main(String[] args) {
